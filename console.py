@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import sys
 import cmd
 from models.base_model import BaseModel
 from models.user import User
@@ -9,8 +10,16 @@ from models.place import Place
 from models.review import Review
 
 from models.engine.file_storage import FileStorage
-
+"""my class"""
 class HBNBCommand(cmd.Cmd):
+    """
+    Command interpreter for HBNB project.
+
+    This command interpreter provides a command-line interface
+    for interacting with the HBNB project. It supports various
+    commands for managing instances of different classes.
+    """
+
     prompt = "(hbnb) "
 
     def __init__(self):
@@ -22,7 +31,7 @@ class HBNBCommand(cmd.Cmd):
     def do_quit(self, arg):
         """Exit the command interpreter."""
         print("Quitting...")
-        return True
+        sys.exit() 
 
     def do_EOF(self, arg):
         """Exit the command interpreter (EOF)."""
