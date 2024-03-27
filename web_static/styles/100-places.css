@@ -1,16 +1,8 @@
-.logo{margin:auto 20px ;
-    width: 100px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('images/logo.png');
-}
 .places{margin-top: 20px;}
 .places h1{font-size: 30px;margin-right: auto;}
 .article-container {
     width: 100%;
-    text-align: center;display: flex;
+    text-align: left;display: flex;
     flex-wrap: wrap;
     justify-content: center;}
 .article-container article{width: 390px;
@@ -65,12 +57,13 @@
             margin-top: 10px;
         }
     
-        .max_guest .icon {
-            background-image: url("images/icon_group.png")}
-        .number_rooms .icon {
-                background-image: url("images/icon_bed.png")}
-        .number_bathrooms .icon{
-                    background-image: url('images/icon_bath.png')}
+        .max_guest i {
+            font-size: 30px;}
+        .number_rooms  i {font-size: 30px;
+                background-image: url("images/icon_be.png")}
+        .number_bathrooms i {font-size: 50px;
+                    }
+                    
                     .article-container article .amenities{margin-top: 40px;}
                     .article-container h2 {
                         font-size: 16px;
@@ -92,20 +85,15 @@
                         background-size: cover;
                         background-position: center;
                       }
-                      .tv{background-image: url("images/icon_tv.png");}
-                      .pets{background-image: url("images/icon_pets.png");}
-                      .wifi{background-image: url("images/icon_wifi.png");}
-                      .golf{background-image: url("images/icon_golf.png");}
+                      
+                        
+                     .tv, .pets, .wifi{font-size: 20px;}
+                      
                       .reviews {
                         margin-top: 40px;
                       }
                       
-                      /* {
-                        font-size: 16px;
-                        border-bottom: 1px solid #DDDDDD;
-                        padding-bottom: 10px;
-                      }
-                      */
+                      
                       .reviews ul {
                         list-style: none;
                         padding: 0;
@@ -122,4 +110,12 @@
                       .reviews p {
                         font-size: 12px;
                       }
+                      @media only screen and (max-width: 600px) {
+                        
+                        .container {
+                            max-width: 100%;
+                            padding: 0 10px; 
+                        }
+                         
+                    }
                
